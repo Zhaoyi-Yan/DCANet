@@ -15,8 +15,6 @@ opt.nThreads = 1   # test code only supports nThreads = 1
 opt.batch_size = 1  # test code only supports batchSize = 1
 opt.is_flip = 0  # no flip
 
-test_model_name = 'output/model.pth'
-
 
 # Mainly get settings for specific datasets
 setting = config(opt)
@@ -34,7 +32,7 @@ eval_loader = torch.utils.data.DataLoader(dataset=eval_dataset, batch_size=1)
 # model construct
 net = define_net(opt)
 net = init_net(net, gpu_ids=opt.gpu_ids)
-net.module.load_state_dict(torch.load(test_model_name, map_location=str(setting.device)))
+net.module.load_state_dict(torch.load(opt.test_model_name, map_location=str(setting.device)))
 criterion = torch.nn.MSELoss(reduction='sum').to(setting.device)
 estimator = Estimator(setting, eval_loader, criterion=criterion)
 

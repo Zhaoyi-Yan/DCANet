@@ -13,6 +13,7 @@ class BaseOptions():
         parser.add_argument('--base_mae', type=str, default='64,10,95', help='base mae of three datasets')
         parser.add_argument('--target_lr', type=float, default=0.1, help='lr of domain center, should be a small center')
         parser.add_argument('--load_model_name', type=str, default=None, help='the path of the model you want to load')
+        parser.add_argument('--test_model_name', default='./output/DCANet.pth', help='the name of the evaluation model')
         parser.add_argument('--domain_center_model', type=str, default='', help='the path of the domain center domain calculated in Phase 2')
         parser.add_argument('--continue_train', type=int, default=1, help='whether continue train')
         parser.add_argument('--fix_domain', type=int, default=0, help='whether fix the domain center')

@@ -10,8 +10,13 @@ After doing that, download the pretrained model via
 ```bash
 bash download_models.sh
 ```
+And put the model into folder './output'
 
 # Test
-```python
-python test.py --domain_center_model='average_clip_domain_center_54.97'
+```bash
+sh test.sh
+```
+Or if you have two GPUs, then
+```bash
+sh test_fast.sh
 ```
