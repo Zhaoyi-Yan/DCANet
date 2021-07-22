@@ -132,5 +132,7 @@ dmypy.json
 *.pth
 *.pt
 
-# output folder
+# folders
 output/
+JSTL_large_dataset/
+
