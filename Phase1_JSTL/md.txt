@@ -1,0 +1,28 @@
+----------------- Options ---------------
+                  amsgrad: 0                             
+               batch_size: 5                             
+          checkpoints_dir: ./output                      
+             dataset_name: JSTL                          
+           eval_per_epoch: 1                             
+            eval_per_step: inf                           
+                fine_size: 400                           
+                  gpu_ids: 0                             
+                init_gain: 0.01                          
+                init_type: normal                        
+                  isTrain: True                          	[default: None]
+             is_color_aug: 1                             
+                  is_flip: 1                             
+            is_random_hsi: 1                             
+                       lr: 0.0001                        
+               max_epochs: 500                           
+                     mode: crop                          
+                 nThreads: 2                             
+                     name: Res_unet                      
+                 net_name: res_unet                      
+                optimizer: adam                          
+               print_step: 10                            
+         start_eval_epoch: 100                           
+             weight_decay: 0                             
+----------------- End -------------------
+JSTL_dataset/ori/train_data/images/QNRF_img_0001.jpg
+QNRF_img_1.npy
