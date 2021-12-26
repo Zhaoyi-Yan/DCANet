@@ -68,5 +68,18 @@ You can get the instructions from the files `*.sh`.
 # Mention
 It is suggested that you should create soft links of `image folder`(e.g., `JSTL_large_dataset`) and `hrnet model`(i.e., `hrnetv2_w40_imagenet_pretrained`) in each main folder. Always, read `config.py` in each main folder if a path error occurs.
 
+# Citation
+If you find our paper give your any insights, please cite:
+```tex
+@ARTICLE{yan2021towards,
+  author={Yan, Zhaoyi and Li, Pengyu and Wang, Biao and Ren, Dongwei and Zuo, Wangmeng},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={Towards Learning Multi-domain Crowd Counting}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TCSVT.2021.3137593}}
 
+```
 
