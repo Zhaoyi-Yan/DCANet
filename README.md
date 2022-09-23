@@ -3,6 +3,11 @@
 ![img](./net_arch.png)
 
 
+# Demo
+You can directly try a demo on:
+https://modelscope.cn/models/damo/cv_hrnet_crowd-counting_dcanet/summary
+
+
 # Datasets Preparation
 Download the datasets `ShanghaiTech A`, `ShanghaiTech B` and `UCF-QNRF`
 Then generate the density maps via `generate_density_map_perfect_names_SHAB_QNRF_NWPU_JHU.py`.
