@@ -5,6 +5,7 @@ import torch
 class config(object):
     def __init__(self, opt):
         self.opt = opt
+        self.unknown_folder = opt.unknown_folder
         self.min_mae = 10240000
         self.min_loss = 10240000
         self.dataset_name = opt.dataset_name
@@ -70,6 +71,17 @@ class config(object):
             self.eval_img_path = 'JSTL_large_dataset/ori/test_data/images'
             self.eval_gt_path = 'JSTL_large_dataset/ori/test_data/ground_truth'
             self.datasets_com = ['SHA', 'SHB', 'QNRF_large']
+
+        # for extra images contain no gt counts
+        elif self.dataset_name == 'unknown_img':
+            self.eval_num = 1
+            self.train_num = 1 # useless in fact
+
+            self.train_gt_map_path = 'x'
+            self.eval_gt_map_path = 'x'
+            self.train_img_path = 'x'
+            self.eval_img_path = self.unknown_folder
+            self.eval_gt_path = 'x'
 
         elif self.dataset_name == 'JSTL_SH_LgQF_NU_JU_oriImg':
       #      self.eval_num = 832
