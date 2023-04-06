@@ -18,7 +18,7 @@ opt.nThreads = 1   # test code only supports nThreads = 1
 opt.batch_size = 1  # test code only supports batchSize = 1
 opt.is_flip = 0  # no flip
 
-opt.dataset_name = 'Unknown'
+opt.dataset_name = 'unknown_img'
 
 test_model_name = 'xx.pth'
 
